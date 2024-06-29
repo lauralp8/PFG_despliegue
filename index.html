@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Lenguaje de Signos</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .header h1 {
+            color: #ff4500;
+            font-size: 2.5em; /* Reducción del tamaño del título */
+            margin: 0;
+        }
+        .header img {
+            height: 3em; /* Tamaño del lazo */
+            margin-left: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between; /* Espacio entre los elementos */
+            align-items: center;
+            width: 90%; /* Aumenta el ancho de la contenedora */
+            height: calc(100vh - 150px); /* Altura total de la ventana menos espacio para el título */
+            margin: 0 auto; /* Centra la contenedora */
+            margin-top: 20px;
+        }
+        .video-section, .image-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 48%; /* Aumenta el ancho de cada sección */
+            height: 100%;
+        }
+        .video-container, .image-container {
+            width: 100%;
+            height: 100%;
+            max-width: 500px; /* Mantiene el tamaño fijo */
+            max-height: 500px; /* Mantiene el tamaño fijo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .video-container iframe, .image-container img {
+            width: 100%;
+            height: 100%;
+            border: 5px solid #ff4500;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .resources {
+            margin-top: 30px;
+            font-size: 1.2em;
+        }
+        .resource-link {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Aprende Lenguaje de Signos</h1>
+        <img src="img/lazo.png" alt="Lazo">
+    </div>
+    <div class="container">
+        <div class="video-section">
+            <h2>¡¡Mírate aquí!!</h2>
+            <div class="video-container">
+                <iframe src="http://localhost:5000/video_feed"></iframe>
+            </div>
+        </div>
+        <div class="image-section">
+            <h2>¡¡Intenta imitar las letras!!</h2>
+            <div class="image-container">
+                <img src="img/signos.png" alt="Signos de Lenguaje">
+            </div>
+        </div>
+    </div>
+    <div class="resources">
+        <p>Accede a más recursos educativos <a class="resource-link" href="https://fundacioncnse-dilse.org/">aquí</a>.</p>
+    </div>
+</body>
+</html>
+
+
